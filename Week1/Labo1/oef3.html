@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>•Ontwikkel een tekst adventure game
+    <br><br>
+        •We maken een scenario waar we tegen een zombie vechten. Vooraleer je vecht kies je een wapen (bijvoorbeeld een pijl & boog, bijl of een kip). Daarna start je het gevecht.
+        <br><br> •Deel 1: Ontwikkel je spel zodat je 50% kans hebt om te winnen ( denk aan Math.random()).
+        <br><br>•Deel 2: tracht je webpagina attractief te maken en afhankelijk van het wapen stijgen je kansen tot winst.</p>
+
+<script>
+
+
+let wapen = prompt("kies een wapen : 1=pijl&boog, 2=bijl, 3=kip");
+
+switch(wapen){
+    case "1":
+        wapen = 30;
+    break;
+    case "2":
+        wapen = 50;
+    break;
+    case "3":
+    wapen = 90;
+    break;
+}
+
+let vecht = Math.random()*100;
+
+if(vecht > wapen){
+     console.log("je wint")
+}
+else{
+    console.log("je verliest")
+}
+
+</script>
+
+    </body>
+</html>

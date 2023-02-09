@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      4. De gebruiker geeft een getal in tussen 1 en 10 (via prompt). Het
+      programma plaatst op de eerste regel 1 sterretje, op de tweede regel 2
+      sterretjes, ... Het aantal regels wordt aangegeven door het getal dat de
+      gebruiker heeft opgegeven. Indien de gebruiker een getal ingeeft kleiner
+      dan 1 of groter dan 10 krijgt hij een foutboodschap.
+    </p>
+
+    <script>
+        let getal = parseInt(prompt("geef een getal in"));
+        if(getal >10 || getal < 1)
+        {
+            alert("FOUT! Je moest een waarde invullen tussen 1 en 10")
+        }
+        else{
+            for(let i=1;i<=getal;i++){
+            for(let j=0;j<i;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+            }
+        }
+    </script>
+  </body>
+</html>
