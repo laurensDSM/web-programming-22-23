@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="stijl.css">
+	<script src="script.js" defer></script>
+	<title>Template-bestand</title>
+</head>
+<body>
+	<!--
+3 soorten scope:
+		1 global scope
+		2 function scope  
+		3 Block scope -> if 
+	-->
+
+<script>
+
+
+//1ste console.log() geeft fout zonder ; bij IIFE
+	let getal = 4
+	console.log(getal);
+	  
+	(() => {
+  let firstVariable;
+  let secondVariable;
+   firstVariable = 20
+   console.log(firstVariable)
+})();
+
+
+
+	console.log(getal)
+
+
+
+
+// 	
+
+function DoeIets(print){
+	let getal = 120
+	print(getal)
+}
+
+let printToLog = function(item){
+	console.log(item)
+}
+
+let printToAlert = function(item){
+	alert(item)
+}
+DoeIets(printToLog)
+
+//korte herhaling 
+/* 
+variabelen => let of const
+scope => globale, locale, block
+Functies => functions declartions voorbeeld function doeIets() = hosting
+fucntions expressions let print = function(){} => functie aan variabelen gekoppeld
+en op die manier kunnen we functie meegeven als een argument van een andere functie = high order functie
+
+extra's met functie"s
+arow functie let print = (item)=> console.log(item)
+IIFE = globale scope niet te vervuilen 
+
+Eigenschap closures => laten de scope van functions werkt
+
+
+*/
+
+</script>
+
+
+</body>
+</html>
