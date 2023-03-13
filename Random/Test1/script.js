@@ -15,13 +15,13 @@ for (let index = 0; index <= 10; index++) {
   //  console.log(getal2)
 
   let getal1 = Math.round(Math.random()* 1)+ 3
-console.log(getal1)
+//console.log(getal1)
 //45 en 60
 }
 
 
 function getRandomArbitrary(min, max) {
-    return Math.round(Math.random() * (max - min) + min)
+    return Math.floor(Math.random() * (max - min) + min)
   }
 
-
+console.log(getRandomArbitrary(1,10))

@@ -12,7 +12,7 @@ let vier = 0
 let vijf = 0
 let zes = 0
 for (let index = 0; index < 1000; index++) {
-    getal = Math.round(Math.random() * (6 - 1) + 1)
+    getal = Math.round(Math.floor() * 6 + 1)
 
     if(getal == 1){
         een++;
